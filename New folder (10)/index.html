@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THUNDER POS</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    /* แถบเมนูด้านบน */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar .logo {
+      font-weight: bold;
+    }
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar ul li {
+      margin: 0 10px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: black;
+    }
+    .navbar .button {
+      background: #007bff;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    /* ส่วนพื้นหลัง */
+    .hero {
+      background: url('img/shop.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      background: rgba(0,0,0,0.4);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- แถบเมนู -->
+  <div class="navbar">
+    <div class="logo">THUNDER POS</div>
+    <ul>
+      <li><a href="#">หน้าขาย</a></li>
+      <li><a href="#">ออเดอร์</a></li>
+      <li><a href="#">สินค้า</a></li>
+      <li><a href="#">แดชบอร์ด</a></li>
+      <li><a href="#">รายงาน</a></li>
+      <li><a href="#">พนักงาน</a></li>
+      <li><a href="#">เข้าสู่ระบบ</a></li>
+    </ul>
+    <a href="#"class="button">สมัครสมาชิก</a>
+  </div>
+
+  <!-- ส่วนต้อนรับ -->
+  <section class="hero"> 
+    <h1>Welcome</h1>
+  </section>
+</body>
+</html>
